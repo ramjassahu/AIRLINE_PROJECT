@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            /* background-color: cornflowerblue; */
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            list-style: none;
+        }
+        #menu-button {
+            background-color: white;
+            cursor: pointer;
+            z-index: 999;
+            height: 32px;
+            width: 32px;
+            color: black;
+            transition: box-shadow 0.3s, border 0.3s;
+            padding: 5px;
+            margin: 0 10px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .bar {
+            background-color: black;
+            height: 1px;
+            width: 20px;
+            margin: 2.7px 0;
+            transition: background-color 0.3s;
+        }
+        #menu-button:hover  {
+            box-shadow: 0 1px 1px 0.5px rgba(0, 0, 0, 0.54);
+            border-color: rgba(0, 0, 0, 0.54);
+        }
+        .pushpak-logo {
+            height: 45px;
+            margin: 0 10px;
+            border-radius: 50%;
+        }
+        .nav {
+            height: 50px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            
+        }
+        .logo {
+            font-size: 40px;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            margin-top: 5px;
+        }
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                
+            }
+            .logo {
+                margin-top: 10px;
+            }
+        }
+        .lst{
+            font-size: small;
+            margin: 0 30px;
+        }
+        #fst-lst{
+            margin-left: 450px;
+        }
+        .Mainn{
+            z-index: 1;
+            min-height: 40vh;
+            background-color: white;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            margin: 23px auto;
+            width: 90%;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 1px 1px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        /* .backimg{
+            height: 1px;
+            box-sizing: border-box;
+            display: block;
+            overflow: hidden;
+            width: initial;
+            height: initial;
+            background: none;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            inset: 0px;
+        } */
+        .backimg{
+            height: 100px;
+            position: absolute;
+            display: block;
+            overflow: hidden;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="menu-button">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="logo">
+            <a href=""><img class="pushpak-logo" src="logo.png" alt="PUSHPAK"></a>PUSHPAK
+        </div>
+        <li class="lst" id="fst-lst">Book</li>
+        <li class="lst">Manage-Booking</li>
+        <li class="lst">Check-in</li>
+        <li class="lst">Add-Ons</li>
+        <li class="lst">Offers</li>
+        <li class="lst">About</li>
+    </nav>
+    <main class="main">
+        <span><img class="backimg" src="logo.png" alt=""></span>
+        <div class="Mainn">
+            <form action="">
+                
+            </form>
+        </div>
+    </main>
+</body>
+</html>
